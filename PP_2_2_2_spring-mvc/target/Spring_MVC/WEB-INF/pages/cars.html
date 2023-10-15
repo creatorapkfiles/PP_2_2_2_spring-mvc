@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:transform="http://www.w3.org/1999/xhtml" xmlns:left="http://www.w3.org/1999/xhtml"
+      xmlns:top="http://www.w3.org/1999/xhtml" xmlns:position="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Cars</title>
+</head>
+<body>
+<div  class="absolute top-1/2 left-1/2 -mr-[-50%] w-[140px] h-[100px] -translate-y-1/2 -translate-x-1/2")>
+    <table border="20px">
+        <tr>
+            <th>BRAND</th>
+            <th>MODEL</th>
+            <th>GENERATION</th>
+        </tr>
+        <tr>
+        <tr th:each="car : ${cars}">
+            <td th:utext="${car.getBrand()}"></td>
+            <td th:utext="${car.getModel()}"></td>
+            <td th:utext="${car.getGeneration()}"></td>
+        </tr>
+    </table>
+</div>
+</body>
+</html>
